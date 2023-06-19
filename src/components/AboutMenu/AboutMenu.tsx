@@ -16,9 +16,7 @@ const AboutMenu = () => {
         }}
       >
         <div>
-          <AboutIcon />
         </div>
-        {t('about')}
       </a>
       {isModalOpen && (
         <PopupModal

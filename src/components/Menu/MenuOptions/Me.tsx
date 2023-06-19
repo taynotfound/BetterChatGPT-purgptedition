@@ -12,7 +12,7 @@ const Me = () => {
       target='_blank'
     >
       <HeartIcon />
-      {t('author')}
+      {t('author')} | Modified by purgpt.xyz Staff
     </a>
   );
 };

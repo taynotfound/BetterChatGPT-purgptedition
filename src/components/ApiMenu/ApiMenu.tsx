@@ -47,35 +47,13 @@ const ApiMenu = ({
       handleConfirm={handleSave}
     >
       <div className='p-6 border-b border-gray-200 dark:border-gray-600'>
-        <label className='flex gap-2 text-gray-900 dark:text-gray-300 text-sm items-center mb-4'>
-          <input
-            type='checkbox'
-            checked={_customEndpoint}
-            className='w-4 h-4'
-            onChange={handleToggleCustomEndpoint}
-          />
-          {t('customEndpoint', { ns: 'api' })}
-        </label>
+        
 
         <div className='flex gap-2 items-center mb-6'>
           <div className='min-w-fit text-gray-900 dark:text-gray-300 text-sm'>
             {t('apiEndpoint.inputLabel', { ns: 'api' })}
           </div>
-          {_customEndpoint ? (
-            <input
-              type='text'
-              className='text-gray-800 dark:text-white p-3 text-sm border-none bg-gray-200 dark:bg-gray-600 rounded-md m-0 w-full mr-0 h-8 focus:outline-none'
-              value={_apiEndpoint}
-              onChange={(e) => {
-                _setApiEndpoint(e.target.value);
-              }}
-            />
-          ) : (
-            <ApiEndpointSelector
-              _apiEndpoint={_apiEndpoint}
-              _setApiEndpoint={_setApiEndpoint}
-            />
-          )}
+          <p className="text-gray-900 dark:text-gray-300 text-sm flex flex-col gap-3 leading-relaxed">https://purgpt.xyz/v1/chat/completions</p>
         </div>
 
         <div className='flex gap-2 items-center justify-center mt-2'>
@@ -99,7 +77,7 @@ const ApiMenu = ({
               ns='api'
               components={[
                 <a
-                  href='https://platform.openai.com/account/api-keys'
+                  href='https://purgpt.xyz/#how'
                   className='link'
                   target='_blank'
                 />,
