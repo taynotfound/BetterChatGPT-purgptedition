@@ -53,7 +53,7 @@ const ApiMenu = ({
           <div className='min-w-fit text-gray-900 dark:text-gray-300 text-sm'>
             {t('apiEndpoint.inputLabel', { ns: 'api' })}
           </div>
-          <p className="text-gray-900 dark:text-gray-300 text-sm flex flex-col gap-3 leading-relaxed">https://purgpt.xyz/v1/chat/completions</p>
+          <p className="text-gray-900 dark:text-gray-300 text-sm flex flex-col gap-3 leading-relaxed">https://beta.purgpt.xyz/openai/chat/completions</p>
         </div>
 
         <div className='flex gap-2 items-center justify-center mt-2'>
